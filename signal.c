@@ -8,8 +8,8 @@
 #include <unistd.h>
 #include <time.h>
 #include <pwd.h>
-#include <signal.h>  
-
+#include <signal.h>
+   
 static void sighandler(int signo){
 	if(signo==SIGSEGV){
     printf("hello \n");
