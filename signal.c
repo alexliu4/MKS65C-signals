@@ -9,7 +9,7 @@
 #include <time.h>
 #include <pwd.h>
 #include <signal.h>
-   
+
 static void sighandler(int signo){
 	if(signo==SIGSEGV){
     printf("hello \n");
@@ -20,7 +20,7 @@ static void sighandler(int signo){
 	} //this function gives an error...ignore it(?)
 }
 
-
+   
 int main(){
 	signal(SIGUSR1, sighandler);
 	signal(SIGSEGV, sighandler);
