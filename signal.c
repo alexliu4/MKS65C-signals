@@ -18,9 +18,9 @@ static void sighandler(int signo){
 	else if (signo==SIGUSR1){
 		printf("What you want from me?!?\n");
 	} //this function gives an error...ignore it(?)
-}
+} 
 
-   
+
 int main(){
 	signal(SIGUSR1, sighandler);
 	signal(SIGSEGV, sighandler);
