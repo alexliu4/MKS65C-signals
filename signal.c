@@ -18,7 +18,9 @@ static void sighandler(int signo){
 	else if (signo==SIGUSR1){
 		printf("What you want from me?!?\n");
 	} //this function gives an error...ignore it(?)
-} 
+}
+
+//THE PUSH FINALLY WORKED
 
 
 int main(){
